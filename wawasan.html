@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="icon" href="/git/img/logo manggarai.png" type="image/x-icon">
+	<!-- Bootstrap CSS -->
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+	<!-- JQuery Link -->
+	<script type="text/javascript" src="assets/jquery-3.6.0.min.js"></script>
+	<script type="text/javascript" src="assets/jquery-ui.js"></script>
+	<link rel="stylesheet" type="text/css" href="assets/jquery-ui.css">
+
+	<!-- LInk CSS  -->
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<title>UAS Desain Web</title>
+	<script type="text/javascript">
+		$(function(){
+			$("#dialogku").dialog({
+				autoOpen:false,
+					show:'blind',
+					hide:'explode'
+			});
+			$('#dibuka').click(function(){
+				$('#dialogku').dialog('open');
+				return false;
+			});
+		});
+	</script>
+</head>
+<body>
+<header>
+	<nav class="navbar navbar-expand-lg navbar-dark main-nav" style="background-color: #003566;" >
+  		<div class="container py-2">
+    <a class="navbar-brand" href="#">
+      <img src="/git/img/logo manggarai.png" alt="" width="40" height="34" class="d-inline-block align-text-top">
+      Manggarai <strong>NTT</strong>
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ms-auto ">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="objekwisata.html">Objek Wisata</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="saranaakomodasi.html">Sarana Akomodasi</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="wawasan.html">Wawasan</a>
+        </li>
+        <form class="d-flex">
+        <input class="form-control me-3" type="search" placeholder="Pencarian" aria-label="Search">
+        <button class="btn btn-success" type="submit">Cari</button>
+      </form>
+      </ul>
+      
+    </div>
+  </div>
+</nav>
+</header>
+<!-- Carousel -->
+<section>
+<div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+  <div class="carousel-indicators">
+    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+  </div>
+  <div class="carousel-inner">
+    <div class="carousel-item active" >
+      <img src="/git/img/komodo flores.jpg" class="d-block w-100  img-thumbnail" alt="..." width="100%" height="500px">
+      <div class="carousel-caption d-none d-md-block" >
+        <h2 class="disply-2">Objek Wisata <span>Pulau Komodo</span> , dengan Panorama <span>satwa langka Komodo</span> dengan Keindahan Alam </h2>
+          <p class="lead">Komodo merupakan spesies terbesar dari familia Varanidae, sekaligus kadal terbesar di dunia, dengan rata-rata panjang 2-3 meter dan beratnya bisa mencapai 100 kg.</p>
+          <button type="button" class="btn btn-success btn-lg"  id="dibuka">
+            Jelajahi
+          </button>
+          <button type="button" class="btn btn-warning btn-lg">
+            Video
+          </button>
+      </div>
+    </div>
+    <div class="carousel-item">
+     <img src="/git/img/wae rebo.jpg" class="d-block w-100 img-thumbnail" alt="..." width="100%" height="500px">
+      <div class="carousel-caption d-none d-md-block" >
+        <h2>Objek Wisata <span>Wae Rebo</span> , dengan Panorama Kampung Adat <span>yang dikelilingi</span> dengan Keindahan Alam pegunungan Mandosawu</h2>
+          <p class="lead">Wae Rebo adalah sebuah desa adat terpencil dan Terletak di ketinggian 1.200 m di atas permukaan laut.</p>
+          <button type="button" class="btn btn-success btn-lg"  id="dibuka">
+            Jelajahi
+          </button>
+          <button type="button" class="btn btn-warning btn-lg">
+            Video
+          </button>
+      </div>
+    </div>
+    <div class="carousel-item">
+     <img src="/git/img/ranamese2.jpg" class="d-block w-100 img-thumbnail " alt="..." width="100%" height="500px">
+      <div class="carousel-caption d-none d-md-block" >
+        <h2>Objek Wisata <span>Danau Rana Mese</span> , dengan Panorama <span>Hutan yang asri dan sejuk</span> serta satwa-satwa dilindungi yang eksotis. </h2>
+          <p class="lead">Danau Ranamese menawarkan pesona alam yang tenang, lho. Dengan luas sekitar lima hektar dengan kedalaman 43 meter, Danau Ranamese memiliki warna hijau sehingga terlihat unik.</p>
+          <button type="button" class="btn btn-success btn-lg" id="dibuka">
+            Jelajahi
+          </button>
+          <button type="button" class="btn btn-warning btn-lg">
+            Video
+          </button>
+      </div>
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+</div>
+</div>
+
+</section>
+
+<!-- Blog Wawasan -->
+<section>
+	<div class="container">
+		<div class="row">
+			<div class="col-md-8">
+				<!-- Breadcrumb -->
+				<nav aria-label="breadcrumb">
+  				<ol class="breadcrumb">
+    				<li class="breadcrumb-item"><a href="#">Home</a></li>
+    				<li class="breadcrumb-item active" aria-current="page">Wawasan</li>
+  				</ol>
+				</nav>
+				<hr>
+				<div class="row">
+					<div class="col-md-5">
+					<figure>
+						<img src="/git/img/komodo flores.jpg" class="img-thumbnail">
+						<figcaption>Gambar Pulau Komodo</figcaption>
+					</figure>
+					</div>
+				<div class="col-md-7">
+					<h3><a href="#">Pulau Komodo</a></h3>
+					<p class="lead">Taman Nasional Komodo di Nusa Tenggara Timur pada tahun 2012 resmi ditetapkan menjadi satu dari tujuh keajaiban dunia atau New 7 Wonders of Nature oleh New 7 Wonders Foundation. Keberhasilan Taman Nasional Komodo menjadi contoh inspiratif bagaimana sebuah masyarakat dapat bersama-sama berusaha melindungi sebuah spesies yang hampir punah.</p>
+					<div class="text-muted">
+                        <img src="/git/img/icons8-user-50.png" width="10px" height="10px">
+						<small>Ronald Nirzan</small>
+					
+                        <img src="/git/img/comments.png" width="10px" height="10px">
+						<small>10 comments</small>
+					</div>
+				</div>
+				<hr>
+				</div>
+				<div class="row">
+					<div class="col-md-6">
+					<figure>
+						<img src="/git/img/wae rebo.jpg" class="img-thumbnail">
+						<figcaption>Gambar Wae Rebo</figcaption>
+					</figure>
+				</div>
+				<div class="col-md-6">
+					<h3><a href="#">Wae Rebo</a></h3>
+					<p class="lead"> Wae Rebo terkenal dengan bangunan rumah adatnya. Meski terlihat sederhana, tapi memiliki ukuran yang sangat besar konon masing-masing memiliki arti sendiri-sendiri. Kamu mungkin bertanya-tanya kenapa jumlahnya tujuh dan tidak ditambah bangunan lagi. Masyarakat setempat memiliki kepercayaan bahwa membangun rumah tidak boleh dilakukan dengan sembarangan.</p>
+					<div class="text-muted">
+                        <img src="/git/img/icons8-user-50.png" width="10px" height="10px">
+						<small>Rolin Mbawo</small>
+						
+                        <img src="/git/img/comments.png" width="10px" height="10px">
+						<small>10 comments</small>
+					</div>
+				</div>
+				<hr>
+				</div>
+				<div class="row">
+					<div class="col-md-6">
+					<figure>
+						<img src="/git/img/ranamese2.jpg" class="img-thumbnail">
+						<figcaption>Gambar Danau Rana Mese</figcaption>
+					</figure>
+				</div>
+				<div class="col-md-6">
+					<h3><a href="#">Danau Rana Mese</a></h3>
+					<p class="lead">Destinasi wisata danau yang berada di Nusa Tenggara Timur ini cukup dikenal oleh masyarakat
+                        Entah dikelola oleh swasta atau pemda , saya kurang tau pasti
+                        Temuan dilapangan seperti kurang terawat dan terkesan kumuh
+                        Seharusnya destinasi wisata dalam bentuk apapun harus dikelola secara profesional , supaya mendatangkan pengunjung lebih banyak dan menghasilkan devisa</p>
+					<div class="text-muted">
+                        <img src="/git/img/icons8-user-50.png" width="10px" height="10px">
+						<small>Yohan Wagon</small>
+					
+                        <img src="/git/img/comments.png" width="10px" height="10px">
+						<small>10 comments</small>
+					</div>
+				</div>
+				<hr>
+				</div>
+				<div class="row">
+					<div class="col-md-6">
+					<figure>
+						<img src="/git/img/batucermin.jpg" class="img-thumbnail">
+						<figcaption>Gambar Goa Batu Cermin</figcaption>
+					</figure>
+				</div>
+				
+				<div class="col-md-6">
+					<h3><a href="#">Goa Batu Cermin</a></h3>
+					<p class="lead">Tempat wisata yang alami dan bagus.
+                        Perlu sedikit energi untuk mendaki dan masuk ke celah bukit bukit batu yang menggoda tersedia tangga tangga yang membantu pijakan pengunjung agar tak terpeleset saat naik ke bukit dan menuju lokasi biasan cahaya batu cermin.</p>
+					<div class="text-muted">
+                        <img src="/git/img/icons8-user-50.png" width="10px" height="10px">
+						<small>Rival Ekong</small>
+						
+                        <img src="/git/img/comments.png" width="10px" height="10px">
+						<small>10 comments</small>
+					</div>
+				</div>
+				<hr>
+				</div>
+				<nav aria-label="Page navigation example">
+ 					<ul class="pagination justify-content-center">
+   					<li class="page-item">
+      			<a class="page-link">Previous</a>
+    				</li>
+    					<li class="page-item"><a class="page-link" href="#">1</a></li>
+    					<li class="page-item"><a class="page-link" href="#">2</a></li>
+    					<li class="page-item"><a class="page-link" href="#">3</a></li>
+    					<li class="page-item">
+      					<a class="page-link" href="#">Next</a>
+    					</li>
+  				</ul>
+				</nav>
+			</div>
+
+			<div class="col-md-4">
+				<div class="row">
+					<div class="col">
+						<h3 class="text-center">Kategori Berita</h3>
+						<hr>
+							<ul class="list-group">
+								<li class="list-group-item d-flex justify-content-between">
+									<a href="#" class="text-info">Objek Wisata</a>
+									<span class="badge badge-primary badge-pill bg-info">10</span>
+								</li>
+								<li class="list-group-item d-flex justify-content-between">
+									<a href="#" class="text-info">Sarana Akomodasi</a>
+									<span class="badge badge-primary badge-pill bg-info">20</span>
+								</li>
+							</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+<!-- end blog  -->
+
+
+
+
+
+
+
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#003566" fill-opacity="1" d="M0,64L34.3,74.7C68.6,85,137,107,206,144C274.3,181,343,235,411,224C480,213,549,139,617,133.3C685.7,128,754,192,823,202.7C891.4,213,960,171,1029,165.3C1097.1,160,1166,192,1234,176C1302.9,160,1371,96,1406,64L1440,32L1440,320L1405.7,320C1371.4,320,1303,320,1234,320C1165.7,320,1097,320,1029,320C960,320,891,320,823,320C754.3,320,686,320,617,320C548.6,320,480,320,411,320C342.9,320,274,320,206,320C137.1,320,69,320,34,320L0,320Z"></path></svg>
+<footer class="text-white text-center" style="background-color:#003566;">
+	<div class="container-fluid" style="background-color:#003566">
+		<div class="row">
+			<div class="col-md-4">
+				@2021 Created By Yohanes Deskristo Naju Wagon
+			</div>
+			<div class="col-md-4">
+				<ul style="text-align:left;" class="list-unstyled">
+				<li ><a href="#"></a> Home</li>
+				<li ><a href="#objekwisata"></a> Objek Wisata</li>
+				<li ><a href="#sarana"></a> Sarana dan Akomodasi</li>
+				<li ><a href="#wawasan"></a> Wawasan</li>
+				</ul>
+			</div>
+			<div class="col-md-4">
+				<p class="display-6">PT Desain Website</p>
+				<p >Jika Anda sedang merancang situs web dan menginginkan lebih banyak pengunjung, kami sarankan Anda terus mempelajari kiat-kiat yang dapat Anda gunakan saat membuat situs web. Jika Anda memiliki tips untuk menulis konten situs web untuk situs web Anda atau jenis konten lainnya, jangan ragu untuk membagikannya kepada kami.</p>
+			</div>
+		</div>
+	</div>
+</footer>
+
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+</body>
+</html>

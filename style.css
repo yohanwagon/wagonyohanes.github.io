@@ -1,0 +1,13 @@
+.main-nav {
+	background-color: #003566;
+}
+.main-nav .navbar-nav a.nav-link {
+	color:  #fff;
+	font-weight: 600;
+}
+.main-nav .navbar-nav .nav-link.active, .main-nav .navbar-nav .nav-link:hover {
+	color: #FFC300;
+}
+.main-nav .btn-success:hover{
+	background-color: #FFC300;
+}

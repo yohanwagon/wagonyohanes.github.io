@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="icon" href="/git/img/logo manggarai.png" type="image/x-icon">
+	<!-- Bootstrap CSS -->
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+	<!-- JQuery Link -->
+	<script type="text/javascript" src="assets/jquery-3.6.0.min.js"></script>
+	<script type="text/javascript" src="assets/jquery-ui.js"></script>
+	<link rel="stylesheet" type="text/css" href="assets/jquery-ui.css">
+
+	<!-- LInk CSS  -->
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<title>UAS Desain Web</title>
+	<script type="text/javascript">
+		$(function(){
+			$("#dialogku").dialog({
+				autoOpen:false,
+					show:'blind',
+					hide:'explode'
+			});
+			$('#dibuka').click(function(){
+				$('#dialogku').dialog('open');
+				return false;
+			});
+		});
+	</script>
+</head>
+<body>
+<header>
+	<nav class="navbar navbar-expand-lg navbar-dark main-nav" style="background-color: #003566;" >
+  		<div class="container py-2">
+    <a class="navbar-brand" href="#">
+      <img src="/git/img/logo manggarai.png" alt="" width="40" height="34" class="d-inline-block align-text-top">
+      Manggarai <strong>NTT</strong>
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ms-auto ">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="objekwisata.html">Objek Wisata</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="saranaakomodasi.html">Sarana Akomodasi</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="wawasan.html">Wawasan</a>
+        </li>
+        <form class="d-flex">
+        <input class="form-control me-3" type="search" placeholder="Pencarian" aria-label="Search">
+        <button class="btn btn-success" type="submit">Cari</button>
+      </form>
+      </ul>
+      
+    </div>
+  </div>
+</nav>
+</header>
+<!-- Carousel -->
+<section>
+<div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+  <div class="carousel-indicators">
+    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+  </div>
+  <div class="carousel-inner">
+    <div class="carousel-item active" >
+      <img src="/git/img/komodo flores.jpg" class="d-block w-100  img-thumbnail" alt="..." width="100%" height="500px">
+      <div class="carousel-caption d-none d-md-block" >
+        <h2 class="disply-2">Objek Wisata <span>Pulau Komodo</span> , dengan Panorama <span>Satwa Langka Komodo</span> dengan Keindahan Alam </h2>
+          <p class="lead">Komodo merupakan spesies terbesar dari familia Varanidae, sekaligus kadal terbesar di dunia, dengan rata-rata panjang 2-3 meter dan beratnya bisa mencapai 100 kg.</p>
+          <button type="button" class="btn btn-success btn-lg"  id="dibuka">
+            Jelajahi
+          </button>
+          <button type="button" class="btn btn-warning btn-lg">
+            Video
+          </button>
+      </div>
+    </div>
+    <div class="carousel-item">
+     <img src="/git/img/wae rebo.jpg" class="d-block w-100 img-thumbnail" alt="..." width="100%" height="500px">
+      <div class="carousel-caption d-none d-md-block" >
+        <h2>Objek Wisata <span>Wae Rebo</span> , dengan Panorama kampung Adat <span>yang dikelilingi</span> oleh keindahan alam pegunungan Mandosawu </h2>
+          <p class="lead">Wae Rebo adalah sebuah desa adat terpencil dan Terletak di ketinggian 1.200 m di atas permukaan laut.</p>
+          <button type="button" class="btn btn-success btn-lg"  id="dibuka">
+            Jelajahi
+          </button>
+          <button type="button" class="btn btn-warning btn-lg">
+            Video
+          </button>
+      </div>
+    </div>
+    <div class="carousel-item">
+     <img src="/git/img/ranamese2.jpg" class="d-block w-100 img-thumbnail " alt="..." width="100%" height="500px">
+      <div class="carousel-caption d-none d-md-block" >
+        <h2>Objek Wisata <span>Danau Rana Mese</span> , dengan Panorama <span>Hutan yang asri dan sejuk</span> serta satwa-satwa dilindungi yang eksotis </h2>
+          <p class="lead">Danau Ranamese menawarkan pesona alam yang tenang, lho. Dengan luas sekitar lima hektar dengan kedalaman 43 meter, Danau Ranamese memiliki warna hijau sehingga terlihat unik.</p>
+          <button type="button" class="btn btn-success btn-lg" id="dibuka">
+            Jelajahi
+          </button>
+          <button type="button" class="btn btn-warning btn-lg">
+            Video
+          </button>
+      </div>
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+</div>
+</div>
+
+</section>
+
+<!-- Objek Wisata -->
+<div class="container" style="background-color:#f3f4f5">
+	<p id="objekwisata" class="display-4" style="text-align:center;">Objek Wisata</p>
+	<div class="row">
+		<div class="col-md-6">
+			<h4>Pulau Komodo</h4>
+			<p class="lead">Pulau Komodo adalah sebuah pulau yang terletak di Kepulauan Nusa Tenggara, berada di sebelah timur Pulau Sumbawa, yang dipisahkan oleh Selat Sape. Pulau Komodo dikenal sebagai habitat asli hewan komodo.
+                Pulau ini termasuk salah satu kawasan Taman Nasional Komodo yang dikelola oleh Pemerintah Pusat.Di Pulau Komodo, hewan komodo hidup dan berkembang biak dengan baik. Hingga Agustus 2009, di pulau ini terdapat sekitar 1300 ekor komodo. Ditambah dengan pulau lain, seperti Pulau Rinca dan dan Gili Motang, jumlah mereka keseluruhan mencapai sekitar 2500 ekor. 
+                Ada pula sekitar 100 ekor komodo di Cagar Alam Wae Wuul di daratan Pulau Flores tapi tidak termasuk wilayah Taman Nasional Komodo.</p>
+            <p>Selain komodo, pulau ini juga menyimpan eksotisme flora yang beragam kayu sepang yang oleh warga sekitar digunakan sebagi obat dan bahan pewarna pakaian, pohon nitak ini atau sterculia oblongata di yakini berguna sebagai obat dan bijinya gurih dan enak seperti kacang polong.
+                Pulau Komodo juga diterima sebagai Situs Warisan Dunia UNESCO, karena dalam wilayah Taman Nasional Komodo, bersama dengan Pulau Rinca, Pulau Padar dan Gili Motang</p>
+			<a href="#" class="btn btn-outline-success">Selanjutnya</a><br>
+			<h4>Hubungi Kami di Sosial Media</h4>
+			<a href="#" class="btn btn-primary">Facebook</a>
+			<a href="#" class="btn btn-success">Twitter</a>
+			<a href="#" class="btn btn-warning">Youtube</a>
+		</div>
+		<div class="col-md-6">
+			<figure class="figure">
+				<img src="/git/img/komodo flores.jpg" class="img-thumbnail" width="100%" alt="gambar pulau komodo">
+				<figcaption style="text-align:center;">Gambar Pulau Komodo</figcaption>
+			</figure>
+            <div class="col-md-6">
+                <p class="lead"><strong>Google Map Lokasi Pulau Komodo</strong></p>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d252484.74685972236!2d119.33254715427378!3d-8.588867656082858!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2db4545ba8b2bbbb%3A0x62b9b2c3feba412!2sPulau%20Komodo!5e0!3m2!1sid!2sid!4v1643359622028!5m2!1sid!2sid" width="500" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+		</div>
+	</div>
+	<hr>
+	<div class="row">
+		<div class="col-md-6">
+			<figure class="figure">
+				<img src="/git/img/wae rebo.jpg" class="img-thumbnail" width="100%" alt="gambar wae rebo">
+				<figcaption style="text-align:center;">Gambar Wae Rebo</figcaption>
+			</figure>
+            <div class="col-md-6">
+                <p class="lead"><strong>Google Map Lokasi Wae Rebo</strong></p>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3943.180228904782!2d120.2819976143376!3d-8.769107891982019!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2db36459b2e80e9d%3A0xce74c6b87dcb8a88!2sWae%20Rebo%20Village!5e0!3m2!1sid!2sid!4v1643360626981!5m2!1sid!2sid" width="500" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+		</div>
+		<div class="col-md-6">
+			<h4 >Wae Rebo</h4>
+			<p class="lead">Wae Rebo adalah sebuah desa adat terpencil dan misterius di Kabupaten Manggarai, Nusa Tenggara Timur.
+                Terletak di ketinggian 1.200 m di atas permukaan laut. Di kampung ini hanya terdapat 7 rumah utama atau yang disebut sebagai Mbaru Niang yang 
+                memiliki arsitektur khas yang masih terjaga dari jaman dahulu sampai sekarang. bahan bangunan bersumber dari bahan alam yang ada.</p>
+            <p>Tak sulit untuk jatuh cinta pada kampung ini. Pengunjung dapat merasakan keunikan budaya, adat istiadat, keramahan warganya serta kearifan lokal yang masih terasa kental di kampung ini.</p>
+			<a href="#" class="btn btn-outline-success">Selanjutnya</a><br>
+			<h4>Hubungi Kami di Sosial Media</h4>
+			<a href="#" class="btn btn-primary">Facebook</a>
+			<a href="#" class="btn btn-success">Twitter</a>
+			<a href="#" class="btn btn-warning">Youtube</a>
+		</div>
+	</div>
+	<hr>
+	<div class="row">
+		<div class="col-md-6">
+			<h4>Danau Rana Mese</h4>
+			<p class="lead">Danau Rana Mese berada di Desa Golo Loni, Kecamatan Rana Mese, Kabupaten Manggarai Timur, NTT dalam kawasan TWA Ruteng seluas 32.245,6 Ha. TWA terluas di Indonesia ini berada dibawah pengelolaan BKSDA NTT
+                Danau Rana Mese diapit Gunung Mandosawu (2.400 mdpl) puncak tertinggi di Manggarai Timur dan Gunung Ranaka (2.140 mdpl) puncak tertinggi kedua. Kawasan di wilayah ini dipenuhi berbagai flora dan fauna menemani sejuknya alam di kawasan ini
+                Destinasi wisata ini belum terkenal dan tidak dimasukan dalam paket perjalanan wisata sehingga kunjungan wisatawan masih minim. Wisatawan menjadikan danau ini sebagai tempat singgah saat melintasi jalan negara Trans Flores Ruteng-Borong</p>
+            <p>Pemerintah Manggarai Timur sudah berkoordinasi dengan BKSDA untuk pengelolaan Danau Rana Mese, tetapi harus ada surat  permintaan dari bupati kepada BKSDA. Pemerintah Kabupaten Manggarai Timur mengaku siap mengelola destinasi wisata ini dan telah menjadikan Desa Golo Loni sebagai desa wisata</p>
+			<a href="#" class="btn btn-outline-success">Selanjutnya</a><br>
+			<h4>Hubungi Kami di Sosial Media</h4>
+			<a href="#" class="btn btn-primary">Facebook</a>
+			<a href="#" class="btn btn-success">Twitter</a>
+			<a href="#" class="btn btn-warning">Youtube</a>
+		</div>
+		<div class="col-md-6">
+			<figure class="figure">
+				<img src="/git/img/ranamese2.jpg" class="img-thumbnail" width="100%" alt="gambar danau rana mese">
+				<figcaption style="text-align:center;">Gambar Danau Rana Mese</figcaption>
+			</figure>
+            <div class="col-md-6">
+                <p class="lead"><strong>Google Map Lokasi Danau Rana Mese</strong></p>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d31556.39653280671!2d120.54360146908444!3d-8.639166102673078!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2db30c91c020fdfd%3A0x17d84708e4115485!2sRana%20Mese!5e0!3m2!1sid!2sid!4v1643361562628!5m2!1sid!2sid" width="500" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+		</div>
+	</div>
+	<hr>
+	<div class="row">
+		<div class="col-md-6">
+			<figure class="figure">
+				<img src="/git/img/batucermin.jpg" class="img-thumbnail" width="100%" alt="gambar goa batu cermin">
+				<figcaption style="text-align:center;">Gambar Goa Batu Cermin</figcaption>
+			</figure>
+            <div class="col-md-6">
+                <p class="lead"><strong>Google Map Lokasi Goa Batu Cermin</strong></p>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d31569.68472775287!2d119.88457334030939!3d-8.478893163049937!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2db465cc00000001%3A0x4117d8cde8e0be40!2sGoa%20Batu%20Cermin!5e0!3m2!1sid!2sid!4v1643361675334!5m2!1sid!2sid" width="500" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+		</div>
+		<div class="col-md-6">
+			<h4 >Goa Batu Cermin</h4>
+			<p class="lead">Goa Batu Cermin adalah salah satu obyek wisata yang unik yang terdapat di Labuan Bajo. Dari namanya saja, Goa Batu Cermin seolah sudah membuat penasaran. Selain itu, Labuan Bajo biasanya dikenal dengan pantai dan Komodonya.
+                Pergi ke Labuan Bajo tidak akan lengkap tanpa menyusuri Goa Batu Cermin. Ketika memasuki goa, pengunjung dapat melihat sinar matahari saat siang hari masuk melalui celah-celah goa.</p>
+			<p>Sinar akan dipantulkan oleh dinding-dingingnya sehingga refleksi tersebut mirip seperti sinar matahari yang memantul di cermin. Itu sebabnya, goa ini diberi nama batu cermin.</p>
+			<a href="#" class="btn btn-outline-success">Selanjutnya</a><br>
+			<h4>Hubungi Kami di Sosial Media</h4>
+			<a href="#" class="btn btn-primary">Facebook</a>
+			<a href="#" class="btn btn-success">Twitter</a>
+			<a href="#" class="btn btn-warning">Youtube</a>
+		</div>
+	</div>
+	<hr>
+	<nav aria-label="Page navigation example">
+ 	<ul class="pagination justify-content-center">
+   	<li class="page-item">
+      <a class="page-link">Previous</a>
+    </li>
+    <li class="page-item"><a class="page-link" href="#">1</a></li>
+    <li class="page-item"><a class="page-link" href="#">2</a></li>
+    <li class="page-item"><a class="page-link" href="#">3</a></li>
+    <li class="page-item">
+      <a class="page-link" href="#">Next</a>
+    </li>
+  </ul>
+</nav>
+</div>
+
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#003566" fill-opacity="1" d="M0,64L34.3,74.7C68.6,85,137,107,206,144C274.3,181,343,235,411,224C480,213,549,139,617,133.3C685.7,128,754,192,823,202.7C891.4,213,960,171,1029,165.3C1097.1,160,1166,192,1234,176C1302.9,160,1371,96,1406,64L1440,32L1440,320L1405.7,320C1371.4,320,1303,320,1234,320C1165.7,320,1097,320,1029,320C960,320,891,320,823,320C754.3,320,686,320,617,320C548.6,320,480,320,411,320C342.9,320,274,320,206,320C137.1,320,69,320,34,320L0,320Z"></path></svg>
+<footer class="text-white text-center" style="background-color:#003566;">
+	<div class="container-fluid" style="background-color:#003566">
+		<div class="row">
+			<div class="col-md-4">
+				@2022 Created By Yohanes Deskristo Naju Wagon
+			</div>
+			<div class="col-md-4">
+				<ul style="text-align:left;" class="list-unstyled">
+				<li ><a href="#"></a> Home</li>
+				<li ><a href="#objekwisata"></a> Objek Wisata</li>
+				<li ><a href="#sarana"></a> Sarana dan Akomodasi</li>
+				<li ><a href="#wawasan"></a> Wawasan</li>
+				</ul>
+			</div>
+			<div class="col-md-4">
+				<p class="display-6">PT Desain Website</p>
+				<p >Jika Anda sedang merancang situs web dan menginginkan lebih banyak pengunjung, kami sarankan Anda terus mempelajari kiat-kiat yang dapat Anda gunakan saat membuat situs web. Jika Anda memiliki tips untuk menulis konten situs web untuk situs web Anda atau jenis konten lainnya, jangan ragu untuk membagikannya kepada kami.</p>
+			</div>
+		</div>
+	</div>
+</footer>
+
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+</body>
+</html>

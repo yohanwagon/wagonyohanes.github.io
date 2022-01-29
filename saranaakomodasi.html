@@ -1,0 +1,524 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="icon" href="/git/img/logo manggarai.png" type="image/x-icon">
+	<!-- Bootstrap CSS -->
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+	<!-- JQuery Link -->
+	<script type="text/javascript" src="assets/jquery-3.6.0.min.js"></script>
+	<script type="text/javascript" src="assets/jquery-ui.js"></script>
+	<link rel="stylesheet" type="text/css" href="assets/jquery-ui.css">
+
+	<!-- LInk CSS  -->
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<title>UAS Desain Web</title>
+	<style>
+		#tab{
+			text-align: center;
+		}
+	</style>
+	<script type="text/javascript">
+
+		$(document).ready(function(){
+			$("#tab").tabs();
+		});
+
+		$(function(){
+			$("#dialogku").dialog({
+				autoOpen:false,
+					show:'blind',
+					hide:'explode'
+			});
+			$('#dibuka').click(function(){
+				$('#dialogku').dialog('open');
+				return false;
+			});
+		});
+
+	</script>
+</head>
+<body>
+<header>
+	<nav class="navbar navbar-expand-lg navbar-dark main-nav" style="background-color: #003566;" >
+  		<div class="container py-2">
+    <a class="navbar-brand" href="#">
+      <img src="/git/img/logo manggarai.png" alt="" width="40" height="34" class="d-inline-block align-text-top">
+      Manggarai <strong>NTT</strong>
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ms-auto ">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="objekwisata.html">Objek Wisata</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="saranaakomodasi.html">Sarana Akomodasi</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="wawasan.html">Wawasan</a>
+        </li>
+        <form class="d-flex">
+        <input class="form-control me-3" type="search" placeholder="Pencarian" aria-label="Search">
+        <button class="btn btn-success" type="submit">Cari</button>
+      </form>
+      </ul>
+      
+    </div>
+  </div>
+</nav>
+</header>
+<!-- Carousel -->
+<section>
+<div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+  <div class="carousel-indicators">
+    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+  </div>
+  <div class="carousel-inner">
+    <div class="carousel-item active" >
+      <img src="/git/img/komodo flores.jpg" class="d-block w-100  img-thumbnail" alt="..." width="100%" height="500px">
+      <div class="carousel-caption d-none d-md-block" >
+        <h2 class="disply-2">Objek Wisata <span>Pulau Komodo</span> , dengan Panorama <span>Satwa Langka Komodo</span> dengan Keindahan Alam </h2>
+          <p class="lead">Komodo merupakan spesies terbesar dari familia Varanidae, sekaligus kadal terbesar di dunia, dengan rata-rata panjang 2-3 meter dan beratnya bisa mencapai 100 kg.</p>
+          <button type="button" class="btn btn-success btn-lg"  id="dibuka">
+            Jelajahi
+          </button>
+          <button type="button" class="btn btn-warning btn-lg">
+            Video
+          </button>
+      </div>
+    </div>
+    <div class="carousel-item">
+     <img src="/git/img/wae rebo.jpg" class="d-block w-100 img-thumbnail" alt="..." width="100%" height="500px">
+      <div class="carousel-caption d-none d-md-block" >
+        <h2>Objek Wisata <span>Wae Rebo</span> , dengan Panorama Kampung Adat <span>yang dikelilingi</span> oleh keindahan alam pegunungan Mandosawu </h2>
+          <p class="lead">Wae Rebo adalah sebuah desa adat terpencil dan Terletak di ketinggian 1.200 m di atas permukaan laut.</p>
+          <button type="button" class="btn btn-success btn-lg"  id="dibuka">
+            Jelajahi
+          </button>
+          <button type="button" class="btn btn-warning btn-lg">
+            Video
+          </button>
+      </div>
+    </div>
+    <div class="carousel-item">
+     <img src="/git/img/ranamese2.jpg" class="d-block w-100 img-thumbnail " alt="..." width="100%" height="500px">
+      <div class="carousel-caption d-none d-md-block" >
+        <h2>Objek Wisata <span>Danau Rana Mese</span> , dengan Panorama <span>Hutan yang asri dan sejuk</span> serta satwa-satwa dilindungi yang eksotis </h2>
+          <p class="lead">Danau Ranamese menawarkan pesona alam yang tenang, lho. Dengan luas sekitar lima hektar dengan kedalaman 43 meter, Danau Ranamese memiliki warna hijau sehingga terlihat unik.</p>
+          <button type="button" class="btn btn-success btn-lg" id="dibuka">
+            Jelajahi
+          </button>
+          <button type="button" class="btn btn-warning btn-lg">
+            Video
+          </button>
+      </div>
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+</div>
+</div>
+</section>
+
+<!-- Card -->
+<div id="tab">
+	<ul class="text-center">
+		<li><a href="#tab-1">Hotel</a></li>
+		<li><a href="#tab-2">Transfort</a></li>
+		<li><a href="#tab-3">Restauran</a></li>
+	</ul>
+	<div id="tab-1">
+		<div class="container-fluid" style="background-color:#f3f4f5">
+  		<p id="sarana" class="display-4" style="text-align:center;">Hotel dan penginapan</p>
+  			<div class="row">
+    			<div class="col-md-4">
+     			 <div class="card" style="width: 23rem;">
+          <img src="/git/img/bungalow.jpg" class="card-img-top img-thumbnail" alt="pulau komodo" width="100%" >
+          <div class="card-body">
+           <h5 class="card-title"> Kanawa Resort </h5>
+           <img src="/git/img/star1.png" width="30px" height="30px">
+           <img src="/git/img/star1.png" width="30px" height="30px">
+           <img src="/git/img/star1.png" width="30px" height="30px">
+           <img src="/git/img/star1.png" width="30px" height="30px">
+           <img src="/git/img/star1.png" width="30px" height="30px">
+           <br>
+           <img src="/git/img/location1.png" width="30px" height="30px">Pasir Putih, Komodo, Kabupaten Manggarai Barat, Nusa Tenggara Timur.
+           <p class="card-text">Dapatkan semangat untuk semua petualangan di Labuan Bajo dengan menginap di Kanawa Resort. 
+            Biarkan opsi Anda tetap terbuka! Apa pun minat Anda di Labuan Bajo, Anda akan mengaksesnya dengan nyaman dengan menginap di Kanawa Resort.</p>
+           <p class="card-text">Rp. 2.000.000 / malam</p>
+           <a href="#" class="btn btn-success">Pesan Sekarang !!!</a>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="card" style="width: 23rem;">
+          <img src="/git/img/wae rebo (8).jpg" class="card-img-top img-thumbnail" alt="wae rebo" width="100%" >
+          <div class="card-body">
+           <h5 class="card-title"> Mbaru Niang Wae Rebo</h5>
+           <img src="/git/img/star1.png" width="30px" height="30px">
+           <img src="/git/img/star1.png" width="30px" height="30px">
+           <img src="/git/img/star1.png" width="30px" height="30px">
+           <img src="/git/img/star1.png" width="30px" height="30px">
+           <br>
+           <img src="/git/img/location1.png" width="30px" height="30px">Satar Lenda, Satar Mese Barat, Kabupaten Manggarai, Nusa Tenggara Timur.
+           <p class="card-text">Rumah adat Mbaru Niang berbentuk kerucut dan memiliki lima lantai dengan tinggi sekitar 15 meter. 
+            Rumah adat Mbaru niang dinilai sangat langka karena hanya terdapat di kampung adat Wae Rebo yang terpencil di atas pegunungan.</p>
+           <p class="card-text">Rp. 200.000/ malam</p>
+           <a href="#" class="btn btn-primary">Pesan Sekarang !!!</a>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="card" style="width: 23rem;">
+          <img src="/git/img/fx hotel.jpg" class="card-img-top img-thumbnail" alt="danau rana mese" width="100%" >
+          <div class="card-body">
+           <h5 class="card-title"> Hotel FX Ruteng</h5>
+           <img src="/git/img/star1.png" width="30px" height="30px">
+           <img src="/git/img/star1.png" width="30px" height="30px">
+           <img src="/git/img/star1.png" width="30px" height="30px">
+           <img src="/git/img/star1.png" width="30px" height="30px">
+           <br>
+           <img src="/git/img/location1.png" width="30px" height="30px">Kota Ruteng, Kecamatan Langke Rembong, Manggarai, Nusa Tenggara Timur.
+           <p class="card-text">FX 72 Ruteng Hotel menawarkan berbagai fasilitas di tempat untuk memuaskan tamu yang paling cerdas sekalipun. 
+            Layanan antar-jemput yang disediakan oleh FX 72 Ruteng Hotel memudahkan Anda merencanakan perjalanan sehari, jalan-jalan, dan banyak lagi di sekitar Ruteng.</p>
+           <a href="#" class="btn btn-success">Pesan Sekarang !!!</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-4">
+      <div class="card" style="width: 23rem;">
+          <img src="/git/img/ayana.jpg" class="card-img-top img-thumbnail" alt="pulau komodod" width="100%" >
+          <div class="card-body">
+           <h5 class="card-title"> AYANA Komodo Resort</h5>
+           <img src="/git/img/star1.png" width="30px" height="30px">
+           <img src="/git/img/star1.png" width="30px" height="30px">
+           <img src="/git/img/star1.png" width="30px" height="30px">
+           <img src="/git/img/star1.png" width="30px" height="30px">
+           <img src="/git/img/star1.png" width="30px" height="30px">
+           <br>
+           <img src="/git/img/location1.png" width="30px" height="30px">Pantai Waecicu, Labuan Bajo, Kab, Kabupaten Manggarai Barat, Nusa Tenggara Timur.
+           <p class="card-text">Resor santai di pantai yang menghadap ke Laut Flores ini berjarak 44 km dari Taman Nasional Komodo dan 6 km dari Bandara Komodo.
+            Terdapat pantai pribadi, 2 kolam renang outdoor (1 memiliki bar kolam renang), spa, dek yoga, dan gym. Pilihan bersantap meliputi 3 restoran (1 menyajikan hidangan Jepang) dan 4 bar. 
+            Ada 5 toko, klub anak-anak, tur, dan antar-jemput bandara. Ruang acara meliputi ballroom.</p>
+           <a href="#" class="btn btn-success">Pesan Sekarang !!!</a>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="card" style="width: 23rem;">
+          <img src="/git/img/revayah.png" class="card-img-top img-thumbnail" alt="wae rebo" width="100%" >
+          <div class="card-body">
+           <h5 class="card-title"> Hotel Revayah</h5>
+           <img src="/git/img/star1.png" width="30px" height="30px">
+           <img src="/git/img/star1.png" width="30px" height="30px">
+           <img src="/git/img/star1.png" width="30px" height="30px">
+           <img src="/git/img/star1.png" width="30px" height="30px">
+           <br>
+           <img src="/git/img/location1.png" width="30px" height="30px">Kota Ruteng, Kec. Langke Rembong, Kab. Manggarai - Ruteng, Ruteng, NTT, Indonesia
+           <p class="card-text">Revayah Hotels sebuah hunian yang berlokasi di Ruteng. Suasana ruangan yang bersih dan nyaman, cocok bagi Anda yang akan berlibur atau mengadakan kunjungan bisnis. 
+               Lokasi yang strategis sehingga mudah untuk diakses, dan harga yang terjangkau bisa menjadi pilihan akomodasi perjalanan Anda.</p>
+           <a href="#" class="btn btn-success">Pesan Sekarang !!!</a>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="card" style="width: 23rem;">
+          <img src="/git/img/lodge wae rebo.jpg" class="card-img-top img-thumbnail" alt="danau rana mese" width="100%" >
+          <div class="card-body">
+           <h5 class="card-title"> Wae Rebo Lodge Homestay</h5>
+           <img src="/git/img/star1.png" width="30px" height="30px">
+           <img src="/git/img/star1.png" width="30px" height="30px">
+           <img src="/git/img/star1.png" width="30px" height="30px">
+           <img src="/git/img/star1.png" width="30px" height="30px">
+           <br>
+           <img src="/git/img/location1.png" width="30px" height="30px">Desa Dintor, Satar Lenda, Satar Mese Barat, Satar Lenda, Flores, Manggarai 
+           <p class="card-text">Menampilkan daftar fasilitas yang lengkap, tamu akan merasakan bahwa mereka menginap di properti yang nyaman. 
+               Tempat parkir mobil, antar-jemput bandara, restoran, tur, layanan binatu (laundry) hanyalah beberapa dari berbagai fasilitas yang ditawarkan. 
+               Kamar dilengkapi dengan segala fasilitas yang Anda butuhkan untuk bermalam dengan nyaman. Di beberapa kamar terdapat kamar bebas asap rokok, AC, layanan bangun pagi, meja tulis, balkon/teras. </p>
+           <a href="#" class="btn btn-success">Pesan Sekarang !!!</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<br>
+<hr>
+  <nav aria-label="Page navigation example">
+  <ul class="pagination justify-content-center">
+    <li class="page-item">
+      <a class="page-link">Previous</a>
+    </li>
+    <li class="page-item"><a class="page-link" href="#">1</a></li>
+    <li class="page-item"><a class="page-link" href="#">2</a></li>
+    <li class="page-item"><a class="page-link" href="#">3</a></li>
+    <li class="page-item">
+      <a class="page-link" href="#">Next</a>
+    </li>
+  </ul>
+</nav>
+	</div>
+	<div id="tab-2">
+		<div class="container-fluid" style="background-color:#f3f4f5">
+  <p id="sarana" class="display-4" style="text-align:center;">Transfort Akomodasi</p>
+  <div class="row">
+    <div class="col-md-4">
+      <div class="card" style="width: 23rem;">
+          <img src="/git/img/komodo tour travel.jpg" class="card-img-top img-thumbnail" alt="pulau komodo" width="100%" >
+          <div class="card-body">
+           <h5 class="card-title"> Komodo Tour & Travel</h5>
+           <img src="/git/img/star1.png" width="30px" height="30px">
+           <img src="/git/img/star1.png" width="30px" height="30px">
+           <img src="/git/img/star1.png" width="30px" height="30px">
+           <img src="/git/img/star1.png" width="30px" height="30px">
+           <img src="/git/img/star1.png" width="30px" height="30px">
+           <br>
+           <img src="/git/img/location1.png" width="30px" height="30px">Pulau Komodo, Labuan Bajo, Manggarai Barat, Nusa Tenggara Timur.
+           <p class="card-text">No. 1 dari 9 Transportasi di Pulau Komodo
+            Transportasi, Tur dengan Perahu & Olahraga Air, Lainnya, Aktivitas Luar Ruangan, Tur, Tur Mandiri & Penyewaan Kendaraan, 
+            Tur Wisata Alam & Margasatwa, Tur Pribadi, Penyewaan Kapal, Penyewaan Perlengkapan, Taksi & Layanan Antar Jemput, Safari.</p>
+           <a href="#" class="btn btn-success">Pesan Sekarang !!!</a>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="card" style="width: 23rem;">
+          <img src="/git/img/gunung mas.jpg" class="card-img-top img-thumbnail" alt="wae rebo" width="100%" >
+          <div class="card-body">
+           <h5 class="card-title"> Gunung Mas Tour & Travel</h5>
+           <img src="/git/img/star1.png" width="30px" height="30px">
+           <img src="/git/img/star1.png" width="30px" height="30px">
+           <img src="/git/img/star1.png" width="30px" height="30px">
+           <img src="/git/img/star1.png" width="30px" height="30px">
+           <br>
+           <img src="/Webboostrap/img/location1.png" width="30px" height="30px">Kota Ruteng, Kec Langke Rembong, Manggarai, Nusa Tenggara Timur.
+           <p class="card-text">Gunung Mas Travel Melayani Trayek Ruteng - Labuan Bajo PP -- 8 kali Sehari, Ruteng - Ende PP -- 2 kali sehari, Ruteng - Maumere PP -- 1 kali sehari</p>
+           <a href="#" class="btn btn-primary">Pesan Sekarang !!!</a>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="card" style="width: 23rem;">
+          <img src="/git/img/roverland.jpg" class="card-img-top img-thumbnail" alt="danau rana mese" width="100%" >
+          <div class="card-body">
+           <h5 class="card-title"> Roverland Tour & Travel</h5>
+           <img src="/git/img/star1.png" width="30px" height="30px">
+           <img src="/git/img/star1.png" width="30px" height="30px">
+           <img src="/git/img/star1.png" width="30px" height="30px">
+           <img src="/git/img/star1.png" width="30px" height="30px">
+           <img src="/git/img/star1.png" width="30px" height="30px">
+           <br>
+           <img src="/git/img/location1.png" width="30px" height="30px">Labuan Bajo, Manggarai Barat, Nusa Tenggara Timur.
+           <p class="card-text">1 dari 2 Kursus & Sanggar di Labuan Bajo
+            Lainnya, Tur, Makanan & Minuman, Kursus & Sanggar, Transportasi, Aktivitas Luar Ruangan, Wisata Sehari-hari, Tur & Penyewaan Mandiri, 
+            Tur Alam & Margasatwa, Tur Hiking & Berkemah, Tur Pribadi, Kelas Memasak, Tur Ramah Lingkungan, Taksi & Layanan Antar Jemput, Tur 4WD, 
+            ATV & Off-Road, Tur Budaya, Tur Beberapa Hari</p>
+           <a href="#" class="btn btn-success">Pesan Sekarang !!!</a>
+        </div>
+      </div>
+    </div>
+  </div>
+ 
+</div>
+<br>
+<hr>
+  <nav aria-label="Page navigation example">
+  <ul class="pagination justify-content-center">
+    <li class="page-item">
+      <a class="page-link">Previous</a>
+    </li>
+    <li class="page-item"><a class="page-link" href="#">1</a></li>
+    <li class="page-item"><a class="page-link" href="#">2</a></li>
+    <li class="page-item"><a class="page-link" href="#">3</a></li>
+    <li class="page-item">
+      <a class="page-link" href="#">Next</a>
+    </li>
+  </ul>
+</nav>
+	</div>
+	<div id="tab-3">
+		<div class="container-fluid" style="background-color:#f3f4f5">
+  <p id="sarana" class="display-4" style="text-align:center;">Restauran</p>
+  <div class="row">
+    <div class="col-md-4">
+      <div class="card" style="width: 23rem;">
+          <img src="/git/img/artomoro-restaurant.jpg" class="card-img-top img-thumbnail" alt="danau" width="100%" >
+          <div class="card-body">
+           <h5 class="card-title"> Artomoro Restaurant</h5>
+           <img src="/git/img/star1.png" width="30px" height="30px">
+           <img src="/git/img/star1.png" width="30px" height="30px">
+           <img src="/git/img/star1.png" width="30px" height="30px">
+           <img src="/git/img/star1.png" width="30px" height="30px">
+           <br>
+           <img src="/git/img/location1.png" width="30px" height="30px">Labuan Bajo, Komodo, Kabupaten Manggarai Barat, Nusa Tenggara Timur
+           <p class="card-text">Ingin makan enak tapi harga yang ramah kantong? Anda wajib datang ke wisata kuliner ngetop labuan bajo bernama Artomoro Restaurant And Grill.
+            Tidak hanya berupa menu seafood saja yang bisa Anda santap, tetapi juga ada menu-menu khas Indonesia berupa sup bayam serta kangkung belacan yang tidak kalah menyegarkan.
+            Bahkan, Anda juga berkesempatan untuk mencicipi sajian ala barat, seperti roti yang kombinasi dengan omelette serta pasta. Pastinya akan cocok dengan lidah orang Asia saat santap makanan pada tempat ini.</p>
+           <a href="#" class="btn btn-success">Pesan Sekarang !!!</a>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="card" style="width: 23rem;">
+          <img src="/git/img/bay bajo.jpg" class="card-img-top img-thumbnail" alt="kebun raya" width="100%" >
+          <div class="card-body">
+           <h5 class="card-title"> Bajo Bay Fisherman’s Club</h5>
+           <img src="/git/img/star1.png" width="30px" height="30px">
+           <img src="/git/img/star1.png" width="30px" height="30px">
+           <img src="/git/img/star1.png" width="30px" height="30px">
+           <img src="/git/img/star1.png" width="30px" height="30px">
+           <img src="/git/img/star1.png" width="30px" height="30px">
+           <br>
+           <img src="/git/img/location1.png" width="30px" height="30px">Labuan Bajo, Komodo, Kabupaten Manggarai Barat, Nusa Tenggara Timur.
+           <p class="card-text">Bajo Bay Fisherman’s Club adalah sebuah konsep restoran ikan yang berorientasi pada olahraga memancing.
+            bar dan suasana musik, dekorasi yang menyenangkan dan antik.</p>
+           <a href="#" class="btn btn-primary">Pesan Sekarang !!!</a>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="card" style="width: 23rem;">
+          <img src="/git/img/tree-top-intro.jpg" class="card-img-top img-thumbnail" alt="skuter" width="100%" >
+          <div class="card-body">
+           <h5 class="card-title"> Tree Top Restaurant</h5>
+           <img src="/git/img/star1.png" width="30px" height="30px">
+           <img src="/git/img/star1.png" width="30px" height="30px">
+           <img src="/git/img/star1.png" width="30px" height="30px">
+           <img src="/git/img/star1.png" width="30px" height="30px">
+           <img src="/git/img/star1.png" width="30px" height="30px">
+           <br>
+           <img src="/git/img/location1.png" width="30px" height="30px">Labuan Bajo, Komodo, Kabupaten Manggarai Barat, Nusa Tenggara Timur.
+           <p class="card-text">Makan hidangan nikmat dengan pemandangan yang luar biasa akan anda temui venue romantis tree top resto.
+            Menu yang tersedia seperti cumi goreng tepung, udang goreng, dan kerang saus tiram. Kalau soal rasa, tidak perlu Anda ragukan lagi karena sudah pasti buat ketagihan.
+            Anda bisa makan malam sambil melihat laut luas serta sunset jika datang pada sore hari. Restaurant ini buka setiap hari dari jam 08.00 hingga 23.00.</p>
+           <a href="#" class="btn btn-success">Pesan Sekarang !!!</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-4">
+      <div class="card" style="width: 23rem;">
+          <img src="/git/img/ayanabar.jpg" class="card-img-top img-thumbnail" alt="danau" width="100%" >
+          <div class="card-body">
+           <h5 class="card-title"> UNIQUE Rooftop Bar, AYANA Komodo Resort</h5>
+           <img src="/git/img/star1.png" width="30px" height="30px">
+           <img src="/git/img/star1.png" width="30px" height="30px">
+           <img src="/git/img/star1.png" width="30px" height="30px">
+           <img src="/git/img/star1.png" width="30px" height="30px">
+           <img src="/git/img/star1.png" width="30px" height="30px">
+           <br>
+           <img src="/git/img/location1.png" width="30px" height="30px"> Labuan Bajo, Komodo, Kabupaten Manggarai Barat, Nusa Tenggara Timur.
+           <p class="card-text">Ingin menikmati cemilan di salah satu resort termewah di Labuan Bajo? Yuk, ke UNIQUE Rooftop Bar. 
+               Traveler bisa menikmati makanan ringan sambil minum cocktail atau pilihan minuman non-alkohol lainnya sambil mendengarkan musik. 
+               Waktu yang tepat untuk datang ke UNIQUE rooftop bar adalah saat sunset. 
+               Sambil duduk di sofa yang empuk, anda bisa melihat pemandangan fantastis di Flores dengan hamparan bukit yang sambung menyambung.</p>
+           <a href="#" class="btn btn-success">Pesan Sekarang !!!</a>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="card" style="width: 23rem;">
+          <img src="/git/img/spring hil.jpeg" class="card-img-top img-thumbnail" alt="danau" width="100%" >
+          <div class="card-body">
+           <h5 class="card-title"> Spring Hill Hotel & Resto</h5>
+           <img src="/git/img/star1.png" width="30px" height="30px">
+           <img src="/git/img/star1.png" width="30px" height="30px">
+           <img src="/git/img/star1.png" width="30px" height="30px">
+           <img src="/git/img/star1.png" width="30px" height="30px">
+           <img src="/git/img/star1.png" width="30px" height="30px">
+           <br>
+           <img src="/git/img/location1.png" width="30px" height="30px">Ruteng, Manggarai, Nusa Tenggara Timur, Indonesia
+           <p class="card-text">pring Hill Boutique Hotel Ruteng menawarkan akomodasi bintang 2 dengan balkon pribadi. 
+               Setiap akomodasi di hotel bintang 2 ini menampilkan pemandangan taman, dan Anda dapat menikmati akses ke restoran dan taman. 
+               Akomodasi ini menyediakan layanan kamar dan Wi-Fi gratis di seluruh areanya.</p>
+           <a href="#" class="btn btn-success">Pesan Sekarang !!!</a>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="card" style="width: 23rem;">
+          <img src="/git/img/sylvia resort.jpeg" class="card-img-top img-thumbnail" alt="danau" width="100%" >
+          <div class="card-body">
+           <h5 class="card-title"> Sylvia Resort & Resto</h5>
+           <img src="/git/img/star1.png" width="30px" height="30px">
+           <img src="/git/img/star1.png" width="30px" height="30px">
+           <img src="/git/img/star1.png" width="30px" height="30px">
+           <img src="/git/img/star1.png" width="30px" height="30px">
+           <img src="/git/img/star1.png" width="30px" height="30px">
+           <br>
+           <img src="/git/img/location1.png" width="30px" height="30px">Pantai Waecicu, Labuan Bajo, Manggarai Barat, Nusa Tenggara Timur. 
+           <p class="card-text">Akomodasi ini hanya berjarak 1 menit dari pantai. Terletak di Pantai Waecicu di Labuan Bajo, 
+               Sylvia Resort Komodo menawarkan kolam renang tepi pantai serta perjalanan perahu cepat reguler ke Pulau Rinca dan Taman Nasional Komodo. 
+               Anda juga dapat menikmati berbagai jenis kegiatan air di resor ini.</p>
+           <a href="#" class="btn btn-success">Pesan Sekarang !!!</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<br>
+<hr>
+  <nav aria-label="Page navigation example">
+  <ul class="pagination justify-content-center">
+    <li class="page-item">
+      <a class="page-link">Previous</a>
+    </li>
+    <li class="page-item"><a class="page-link" href="#">1</a></li>
+    <li class="page-item"><a class="page-link" href="#">2</a></li>
+    <li class="page-item"><a class="page-link" href="#">3</a></li>
+    <li class="page-item">
+      <a class="page-link" href="#">Next</a>
+    </li>
+  </ul>
+</nav>
+	</div>
+
+</div>
+
+<!-- End Card -->
+
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#003566" fill-opacity="1" d="M0,64L34.3,74.7C68.6,85,137,107,206,144C274.3,181,343,235,411,224C480,213,549,139,617,133.3C685.7,128,754,192,823,202.7C891.4,213,960,171,1029,165.3C1097.1,160,1166,192,1234,176C1302.9,160,1371,96,1406,64L1440,32L1440,320L1405.7,320C1371.4,320,1303,320,1234,320C1165.7,320,1097,320,1029,320C960,320,891,320,823,320C754.3,320,686,320,617,320C548.6,320,480,320,411,320C342.9,320,274,320,206,320C137.1,320,69,320,34,320L0,320Z"></path></svg>
+<footer class="text-white text-center" style="background-color:#003566;">
+	<div class="container-fluid" style="background-color:#003566">
+		<div class="row">
+			<div class="col-md-4">
+				@2021 Created By Yohanes Deskristo Naju Wagon
+			</div>
+			<div class="col-md-4">
+				<ul style="text-align:left;" class="list-unstyled">
+				<li ><a href="#"></a> Home</li>
+				<li ><a href="#objekwisata"></a> Objek Wisata</li>
+				<li ><a href="#sarana"></a> Sarana dan Akomodasi</li>
+				<li ><a href="#wawasan"></a> Wawasan</li>
+				</ul>
+			</div>
+			<div class="col-md-4">
+				<p class="display-6">PT Desain Website</p>
+				<p >Jika Anda sedang merancang situs web dan menginginkan lebih banyak pengunjung, kami sarankan Anda terus mempelajari kiat-kiat yang dapat Anda gunakan saat membuat situs web. Jika Anda memiliki tips untuk menulis konten situs web untuk situs web Anda atau jenis konten lainnya, jangan ragu untuk membagikannya kepada kami.</p>
+			</div>
+		</div>
+	</div>
+</footer>
+
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+</body>
+</html>
